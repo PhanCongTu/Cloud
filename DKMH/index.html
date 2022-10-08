@@ -1,0 +1,327 @@
+<!DOCTYPE html
+    PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <link rel="icon" href="/Content/Images/favicon.ico" type="image/x-icon" />
+    <title>TRƯỜNG ĐẠI HỌC SƯ PHẠM KỸ THUẬT TP.HCM - Trang đăng kí học ph&#226;̀n</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <meta http-eqyuiv="Content-Type" content="text/html; charset=utf-8">
+    <link href="/Content/css/style_main.css" rel="stylesheet" />
+    <script src="/Scripts/jquery-1.7.1.js"></script>
+    <!--   Jquery ui -->
+    <script src="/Content/ui/jquery.easyui.min.js"></script>
+    <link href="/Content/ui/themes/default/easyui.css" rel="stylesheet" />
+    <!--  end Jquery ui -->
+    <script type="text/javascript" src="/Scripts/functionapp.js">   </script>
+    <!--  --->
+    <link href="/Content/css/main.css" rel="stylesheet" type="text/css" />
+    <link href="/Content/css/inside.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript">
+        // if (window.location.protocol == "http:" && window.location.host != "localhost:25424") {
+        //     var restOfUrl = window.location.href.substr(5);
+        //     window.location = "https:" + restOfUrl;
+        // }
+    </script>
+</head>
+
+<body>
+    <!--Page-->
+    <div class="page">
+        <form name="frmform" method="post">
+            <!--Panel top-->
+            <div class="paneltop">
+                <!--Phan to-->
+                <!--Phan banner-->
+                <div class="banner">
+                    <img src="/Content/images/banner_UTE.png" />
+                </div>
+                <!--Phan menu2-->
+                <div class="blog_menu2">
+                    <div class="img1_menu2">
+                        <img src="/Content/images/img1_menu2.jpg" />
+                    </div>
+                    <ul class="menu2">
+                        <li><a href="javascript:void(0)">Sinh viên: Phan C&#244;ng T&#250; <span>[ 20110592 ]</span>
+                            </a></li>
+                        <li><a href="/Login/ChangPassword">Đổi mật khẩu</a></li>
+                        <li id="id_menu2"><a href="/Login/logout">Thoát</a></li>
+
+                    </ul>
+                    <div class="img2_menu2">
+                        <img src="/Content/images/img2_menu2.jpg" />
+                    </div>
+                </div>
+                <!--Phan menu3-->
+                <div class="blog_menu3">
+                    <div class="img1_menu3">
+                        <img src="/Content/images/img1_menu3.jpg" class="img1_menu2" />
+                    </div>
+                    <ul class="menu3">
+                        <li>
+                            <img src="/Content/images/hoa.png" class="img" /><a href="#">ĐĂNG KÝ HỌC PHẦN
+                                <img src="/Content/images/ARROW.png" />
+                                <span>Đăng kí học ph&#226;̀n theo k&#234;́ hoạch</span></a>
+                        </li>
+                    </ul>
+                    <div class="img2_menu3">
+                        <img src="/Content/images/img2_menu3.jpg" class="img2_menu2" />
+                    </div>
+                </div>
+
+
+                <!--Phan quang cao va menu-->
+            </div>
+            <!--End Panel top-->
+            <!--container-->
+            <div class="container">
+                <!--Panel lef-->
+                <div class="info_container">
+                    <div class="panelleft1">
+                        <div class="blog_menu4_HP">
+
+                        </div>
+                        <!--Phan PanelBarmenu1-->
+                        <div class="PanelBarMenu">
+                            <ul class="menubar">
+                                <li class="bg_frist_mn"><a href="javascript:void()">Chức Năng</a></li>
+                                <li class="bg_mn"><a href="/Home/TrangChu" target="_parent">Trang chủ</a></li>
+                                <li class="bg_mn"><a href="/Login" target="_parent">Trang đăng ký học ph&#226;̀n</a>
+                                </li>
+                                <li class="bg_mn"><a href="/QuiDinh/Index" target="_newtab">Qui định</a></li>
+                                <li class="bg_mn"><a href="/TraCuuHocPhan/MonTuongDuong" target="_blank">M&#244;n tương
+                                        đương</a></li>
+                                <li class="bg_mn"><a href="/TraCuuHocPhan/Index" target="_newtab">Tra cứu học
+                                        ph&#226;̀n</a></li>
+                                <li class="bg_mn"><a href="/ChuongTrinhDaoTao/Index" target="_newtab">Chương trình đào
+                                        tạo</a></li>
+                                <li class="bg_mn"><a
+                                        href="https://docs.google.com/file/d/0B-zKTcrEKLodSkV4elhtNkJwVFk/edit"
+                                        target="_newtab">Hướng d&#226;̃n đăng k&#253;</a></li>
+                                <li class="bg_mn"><a href="/KetQuaHocTap/Index" target="_newtab">K&#234;́t quả học
+                                        t&#226;p</a></li>
+                                <li class="bg_mn"><a href="/ThoiKhoaBieu/Index" target="_newtab">Thời khóa
+                                        bi&#234;̉u</a></li>
+
+                            </ul>
+                        </div>
+                        <!--Phan PanelBarmenu2-->
+                    </div>
+                    <!--end Panel left-->
+
+
+                    <!--Panel content-->
+                    <div class="panelcontent1">
+
+                        <script language="javascript" type="text/javascript">
+                            $(function () {
+                                //DanhSachHocPhanDaDangKi();
+                                $('#frmform').ajaxForm(function () {
+                                    //alert("Thank you for your comment!");
+                                });
+
+                                $('#messageDiv').delay(6000).fadeOut('slow');
+                            });
+
+                            function KiemTraRegistStatus(RegistStatus, Status, event) {
+                                var kt = event.checked ? false : true;
+                                if (RegistStatus == 2) {
+                                    if (Status == "True" || Status == "true") {
+                                        event.checked = true;
+                                    }
+
+                                }
+                            }
+                            //
+                            function KiemTraSiSo(SLDangKi, SLToiDa, event, registed) {
+                                var kt = (SLDangKi >= SLToiDa) ? false : true;
+                                if (kt == false && (registed == 'False' || registed == 'false')) {
+                                    event.checked = false;
+                                    DialogAlert("Thông báo", "Lớp đã đủ số lượng", "info");
+                                }
+
+                            }
+                            //////////////////
+
+                            // wait for the DOM to be loaded
+                            $(document).ready(function () {
+                                // bind 'myForm' and provide a simple callback function
+                                $('#frmform').ajaxForm(function () {
+                                    //alert("Thank you for your comment!");
+                                });
+                            });
+                        </script>
+
+                        <div class="wrapper_vb">
+                            <div class="blog_menu4_HP">
+                            </div>
+
+                            <div id="DanhSachLop">
+
+
+                                <table border="0" width="100%" style="margin: auto">
+                                    <tr>
+                                        <td><b class="title">DANH SÁCH NHỮNG HỌC PHẦN CHƯA TÍCH LŨY ĐƯỢC TỔ CHỨC GIẢNG
+                                                DẠY THEO KẾ HOẠCH</b></td>
+                                    </tr>
+
+
+                                    <tr>
+                                        <td align="right"></td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <!-- <div id="messageDiv" style="text-align: center; color: red"> Vui lòng
+                                                refesh website và thử lại . Nếu vẫn không được vui lòng thông
+                                                báo lỗi này về PĐT : There is no row at position 0.</div> -->
+                                            <div style="height: 5px"></div>
+                                            <table width="100%" border="1"
+                                                style="border-collapse: collapse; font-size: 13px;">
+                                                <thead>
+                                                    <tr>
+                                                        <th>STT</th>
+                                                        <th>Mã HP</th>
+                                                        <th>Tên học phần</th>
+                                                        <th>STC</th>
+                                                        <th>Loại HP</th>
+                                                        <th>Lớp SV</th>
+                                                        <th>Giới hạn</th>
+                                                        <th>Đã ĐK</th>
+                                                        <th>Giảng viên</th>
+                                                        <th>Lịch học</th>
+                                                        <th>Đăng ký</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+
+
+                                                    <tr>
+                                                        <td colspan="11" align="right">
+                                                            <input type="hidden" name="Tongdong" />
+                                                            <br>
+                                                            <input type="submit" name="btndangki" class="button"
+                                                                value="Đăng ký"
+                                                                onclick="return confirm('Bạn có muốn đăng ký những học phần đã chọn ? \r\n \r\n Lưu ý : Nếu kết quả đăng ký có thay đổi vui lòng lọc lại kết quả đăng ký trước khi đăng ký thêm !')" />
+                                                        </td>
+                                                    </tr>
+
+                                                </tbody>
+
+                                            </table>
+
+
+
+                                        </td>
+                                    </tr>
+                                </table>
+
+
+                            </div>
+                            <div id="DanhSachChon"></div>
+                            <div style="height: 10px"></div>
+                            <div>
+                                <fieldset style="padding: 10px 10px 10px 10px">
+                                    <legend><b style="color: blue">Phiếu đăng k&#253; m&#244;n học</b></legend>
+                                    <div id="DanhSachHocPhanDaDangKi">
+                                        <div style="padding: 2px 2px 2px 2px; text-align: right">
+                                            <a href="/dangkytheokehoachUte?StudyProgramID=xqcZUvlxpCwMo4nxaGv/IQ==">
+                                                <img src="/Content/images/refresh.png" width="25" />
+                                                Lọc lại
+                                            </a>
+                                        </div>
+                                        <div id="reload_ketquadangki">
+
+
+
+                                            <table width="100%">
+                                                <tr>
+                                                    <td width="60%">
+                                                        <b style="font-size: 15px">Tổng số tín chỉ đã đăng ký : 0
+                                                            tín chỉ</b>
+                                                    </td>
+                                                    <td style="text-align: right">
+                                                        <b>
+                                                            Ghi chú :
+                                                            <img src="/Content/images/yellow.png" width="15px" />
+                                                            Trùng lịch
+                                                        </b>
+                                                    </td>
+                                                </tr>
+                                            </table>
+
+                                            <table width="100%" border="1" cellpadding="10"
+                                                style="border-collapse: collapse; font-size: 12px">
+                                                <tr>
+                                                    <th>Mã lớp học phần</th>
+                                                    <th>Tên học phần</th>
+                                                    <th>Số tín chỉ</th>
+                                                    <th>Thông tin</th>
+                                                    <th>Giảng viên</th>
+                                                    <th>Ngày bắt đầu</th>
+                                                    <th>Ngày kết thúc</th>
+                                                    <th>Chuyển nhóm</th>
+                                                    <th>Xóa đăng ký</th>
+
+                                                </tr>
+                                                <tr>
+                                                    <td colspan="9" align="right" style="padding-right: 20px">
+
+
+                                                        <a href="/home/PrintResult?StudentID=" target="_blank">
+                                                            <b
+                                                                style="padding: 3px 3px 3px 3px; background-color: #1b64f7; color: #FFF;">Xu&#226;́t
+                                                                phiếu đăng k&#253; .</b>
+                                                            <img src="/Content/images/printer.jpg" width="25" />
+                                                        </a>
+                                                    </td>
+
+                                                </tr>
+
+                                            </table>
+
+                                        </div>
+                                    </div>
+
+                                </fieldset>
+                            </div>
+
+                        </div>
+
+                        <!--End wrapper-->
+                    </div>
+                    <!--End panelcontent1-->
+                </div>
+                <!--End info_container-->
+            </div>
+            <!--end contaianer-->
+        </form>
+
+        <!--footer-->
+        <div class="panelbottom">
+            <div class="content_bottom">
+                <div class="trai">
+                    <img src="/Content/images/letf_bottom.jpg" />
+                </div>
+                <div class="thongtin">
+                    <span class="tentruong">TRƯỜNG ĐẠI HỌC SƯ PHẠM KỸ THUẬT TP.HCM</span>
+                    <br />
+                    <span>S&#244;́ 1 Võ Văn Ng&#226;n , Qu&#226;̣n Thủ Đức, TP.HCM</span>
+                    <br />
+                    <span>Điện thoại: (84-8) 37221223</span>
+                </div>
+                <div class="phai">
+                    <img src="/Content/images/right_bottom.jpg" />
+                </div>
+            </div>
+            <div class="version">
+                <div class="info_ver"><a href="#">Bản quyền (C) 2022 TRƯỜNG ĐẠI HỌC SƯ PHẠM KỸ THUẬT TP.HCM - Phát triển
+                        bởi PSC UIS </a></div>
+            </div>
+        </div>
+        <!--end footer-->
+    </div>
+    <!--End Page-->
+</body>
+
+</html>
